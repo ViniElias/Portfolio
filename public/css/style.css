@@ -1,13 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 18px;
   }
   
   header, footer {
-    background-color: #222;
+    background-color: #3e5fcc;
     color: white;
-    padding: 1em;
+    padding: 1px 0 20px 0;
     text-align: center;
   }
 
@@ -15,6 +16,7 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding: 5px;
   }
   
   nav a {
@@ -27,15 +29,21 @@ body {
     padding: 2em;
   }  
 
-  #github {
+  p a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
+    margin: 2px;
   }
 
-  #github:hover {
-    border: white solid 2px;
+  a {
     padding: 10px;
-    border-radius: 10px;
-    transition: 0.5s;
+    border-radius: 15px;
+  }
+  
+  a:hover {
+    border: white solid 2px;
+    background-color: white;
+    color:#222;
+    transition: 0.3s;
   }
