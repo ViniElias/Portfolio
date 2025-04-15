@@ -1,92 +1,157 @@
-<%- include('partials/header') %>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title><%= titulo %></title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <main class="card-container">
+    <div class="card">
+      <div class="card-left">
+        <img src="images/foto.png" alt="Foto de Vinicius Elias" class="card-image">
+      </div>
+      <div class="card-right">
+        <h2>Olá! Me chamo Vinicius Elias 👋</h2>
+        <p>Sou programador, atualmente cursando Análise e Desenvolvimento de Sistemas. 🧑🏻‍💻</p>
+        <p>Apaixonado por tecnologia, especialmente tudo que envolve programação e inovação. 💻</p>
 
-<main class="card-container">
-  <div class="card">
-    <div class="card-left">
-      <img src="foto.png" alt="Foto de Vinicius Elias" class="card-image">
-    </div>
-    <div class="card-right">
-      <h2>Vinicius Elias</h2>
-      <p>Programador atualmente cursando Análise e Desenvolvimento de Sistemas.</p>
-      <p>Apaixonado por tecnologia, especialmente tudo que envolve programação e inovação.</p>
+        <div class="divIcons">
+          <div>
+            <a 
+            href="https://github.com/ViniElias" 
+            target="_blank"
+            rel="noopener noreferrer" 
+            class="social">
+            <i class="fa fa-github" id="github-icon"></i>
+            </a>
+          </div>
 
-      <div class="divIcons">
-        <div>
-          <a 
-          href="https://github.com/ViniElias" 
-          target="_blank"
-          rel="noopener noreferrer" 
-          class="social">
-          <i class="fa fa-github" id="github-icon"></i>
-          </a>
+          <div>
+            <a 
+            href="https://linkedin.com/in/vinicius-elias-895332235/" 
+            target="_blank"
+            rel="noopener noreferrer" 
+            class="social">                
+            <i class="fa fa-linkedin" id="linkedin-icon"></i>
+            </a>
+          </div>
+
+          <div>
+            <a 
+            href="https://instagram.com/v_eliass/" 
+            target="_blank"
+            rel="noopener noreferrer" 
+            class="social">
+            <i class="fa fa-instagram" id="instagram-icon"></i>
+            </a>
+          </div>
         </div>
 
-        <div>
-          <a 
-          href="https://linkedin.com/in/vinicius-elias-895332235/" 
-          target="_blank"
-          rel="noopener noreferrer" 
-          class="social">                
-          <i class="fa fa-linkedin" id="linkedin-icon"></i>
-          </a>
+        <h3>Tecnologias</h3>
+        <div class="divIcons tecnologias">
+          <div>
+            <i class="devicon-python-plain"></i>  
+          </div>
+          <div>
+            <i class="devicon-java-plain"></i>  
+          </div>
+          <div>
+            <i class="devicon-react-plain"></i>  
+          </div>
+          <div>
+            <i class="devicon-html5-plain"></i>  
+          </div>
+          <div>
+            <i class="devicon-css3-plain"></i>  
+          </div>
+          <div>
+            <i class="devicon-javascript-plain"></i>  
+          </div>
+          <div>
+            <i class="devicon-typescript-plain"></i>  
+          </div>
+          <div>
+            <i class="devicon-nodejs-plain"></i>  
+          </div>
+          <div>
+            <i class="devicon-mysql-plain"></i>  
+          </div>
         </div>
 
-        <div>
-          <a 
-          href="https://instagram.com/v_eliass/" 
-          target="_blank"
-          rel="noopener noreferrer" 
-          class="social">
-          <i class="fa fa-instagram" id="instagram-icon"></i>
+        <div style="margin-top: 25px;">
+          <a href="curriculo.pdf" download class="btn-download githubProjeto">
+            <i class="fa fa-download"></i> Baixar Currículo
           </a>
         </div>
       </div>
+    </div>
 
-      <h3>Tecnologias</h3>
-      <div class="divIcons tecnologias">
-        <div>
-          <i class="devicon-python-plain"></i>  
-        </div>
-        <div>
-          <i class="devicon-java-plain"></i>  
-        </div>
-        <div>
-          <i class="devicon-react-plain"></i>  
-        </div>
-        <div>
-          <i class="devicon-html5-plain"></i>  
-        </div>
-        <div>
-          <i class="devicon-css3-plain"></i>  
-        </div>
-        <div>
-          <i class="devicon-javascript-plain"></i>  
-        </div>
-        <div>
-          <i class="devicon-typescript-plain"></i>  
-        </div>
-        <div>
-          <i class="devicon-nodejs-plain"></i>  
-        </div>
-        <div>
-          <i class="devicon-mysql-plain"></i>  
-        </div>
+    <div class="card">
+      <div class="card-right">
+        <h2>Scrum Academy 🎯</h2>
+        <p>Projeto em grupo: Site informativo no modelo de curso sobre Metodologia Ágil, com cadastro, quizzes, provas e emissão de certificado.</p>
+        <p></p>
+        <p><strong>Tecnologias utilizadas:</strong> HTML, CSS, JavaScript, Bootstrap, Python, Flask, MySQL, AWS</p>
+        <br>
+        <a href="https://github.com/Bug-Busters-F/scrum-academy" target="_blank" class="social githubProjeto">
+          <i class="fa fa-github"></i> Ver no GitHub
+        </a>
+      </div>
+      <div class="card-left">
+        <img src="images/scrum.png" class="card-image imgNoShadow">
       </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-right">
-      <h2>Scrum Academy</h2>
-      <p>Projeto em grupo: Site informativo no modelo de curso sobre Metodologia Ágil, com cadastro, quizzes, provas e emissão de certificado.</p>
-      <p></p>
-      <p><strong>Tecnologias utilizadas:</strong> HTML, CSS, JavaScript, Python, Flask, MySQL, AWS</p>
-      <br>
-      <a href="https://github.com/Bug-Busters-F/scrum-academy" target="_blank" class="social githubProjeto">
-        <i class="fa fa-github"></i> Ver no GitHub
-      </a>
+    <div class="card">
+      <div class="card-left">
+        <img src="images/alplaca.png" class="card-image imgNoShadow">
+      </div>
+      <div class="card-right">
+        <h2>Alplaca 🚗</h2>
+        <p>Projeto em grupo: Aplicação gráfica para identificar placas de carro e salvar em um banco de dados automaticamente, utilizando inteligência artificial.</p>
+        <p></p>
+        <p><strong>Tecnologias utilizadas:</strong> Java, Ollama, MySQL</p>
+        <br>
+        <a href="https://github.com/Bug-Busters-F/alplaca" target="_blank" class="social githubProjeto">
+          <i class="fa fa-github"></i> Ver no GitHub
+        </a>
+      </div>
     </div>
-  </div>  
-</main>
+    
+    <div class="card">
+      <div class="card-right">
+        <h2>Alfalog 🚢</h2>
+        <p>Projeto em grupo: Site logistíco com dashboards para exibição de estatísticas sobre dados de comércio exterior do Brasil.</p>
+        <p></p>
+        <p><strong>Tecnologias utilizadas:</strong> HTML, CSS, JavaScript, TypeScript, React, TailwindCSS, Python, Flask, MySQL</p>
+        <br>
+        <a href="https://github.com/Bug-Busters-F/alfalog" target="_blank" class="social githubProjeto">
+          <i class="fa fa-github"></i> Ver no GitHub
+        </a>
+      </div>
+      <div class="card-left">
+        <img src="images/alfalog.png" class="card-image imgNoShadow">
+      </div>
+    </div>
 
-<%- include('partials/footer') %>
+    <div class="card">
+      <div class="card-left">
+        <img src="images/baiacu.png" class="card-image imgNoShadow">
+      </div>
+      <div class="card-right">
+        <h2>Fisher Valley 🐡</h2>
+        <p>Site fictício sobre Stardew Valley feito para praticar o uso de componentes de Bootstrap e hospedagem com AWS.</p>
+        <p></p>
+        <p><strong>Tecnologias utilizadas:</strong> HTML, CSS, JavaScript, Bootstrap, Python, Flask, MySQL, AWS</p>
+        <br>
+        <a href="https://github.com/ViniElias/Fisher-Valley" target="_blank" class="social githubProjeto">
+          <i class="fa fa-github"></i> Ver no GitHub
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -5,7 +5,7 @@ body {
     font-size: 18px;
     background-color: gainsboro;
   }
-  
+   
   main {
     padding: 2em;
   }  
@@ -107,4 +107,10 @@ body {
     border: white solid 2px;
     background-color: white;
     color:#1a83b8;
+    text-decoration: none;
+  }
+
+  .imgNoShadow {
+    box-shadow: none;
+    border-radius: 0;
   }
