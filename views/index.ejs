@@ -1,11 +1,92 @@
 <%- include('partials/header') %>
 
-<main>
-  <h2>Bem-vindo!</h2>
-  <p>Meu nome é <%= nome %>, sou programador e atualmente estou cursando Análise e Desenvolvimento de Sistemas. 
-    Tenho uma grande paixão por tecnologia, especialmente por tudo que envolve programação e inovação.</p>
-  <p>Aqui você encontrará trabalhos desenvolvidos durante minha formação, 
-    experiências práticas e ideias que venho explorando ao longo do tempo.</p>
+<main class="card-container">
+  <div class="card">
+    <div class="card-left">
+      <img src="foto.png" alt="Foto de Vinicius Elias" class="card-image">
+    </div>
+    <div class="card-right">
+      <h2>Vinicius Elias</h2>
+      <p>Programador atualmente cursando Análise e Desenvolvimento de Sistemas.</p>
+      <p>Apaixonado por tecnologia, especialmente tudo que envolve programação e inovação.</p>
+
+      <div class="divIcons">
+        <div>
+          <a 
+          href="https://github.com/ViniElias" 
+          target="_blank"
+          rel="noopener noreferrer" 
+          class="social">
+          <i class="fa fa-github" id="github-icon"></i>
+          </a>
+        </div>
+
+        <div>
+          <a 
+          href="https://linkedin.com/in/vinicius-elias-895332235/" 
+          target="_blank"
+          rel="noopener noreferrer" 
+          class="social">                
+          <i class="fa fa-linkedin" id="linkedin-icon"></i>
+          </a>
+        </div>
+
+        <div>
+          <a 
+          href="https://instagram.com/v_eliass/" 
+          target="_blank"
+          rel="noopener noreferrer" 
+          class="social">
+          <i class="fa fa-instagram" id="instagram-icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <h3>Tecnologias</h3>
+      <div class="divIcons tecnologias">
+        <div>
+          <i class="devicon-python-plain"></i>  
+        </div>
+        <div>
+          <i class="devicon-java-plain"></i>  
+        </div>
+        <div>
+          <i class="devicon-react-plain"></i>  
+        </div>
+        <div>
+          <i class="devicon-html5-plain"></i>  
+        </div>
+        <div>
+          <i class="devicon-css3-plain"></i>  
+        </div>
+        <div>
+          <i class="devicon-javascript-plain"></i>  
+        </div>
+        <div>
+          <i class="devicon-typescript-plain"></i>  
+        </div>
+        <div>
+          <i class="devicon-nodejs-plain"></i>  
+        </div>
+        <div>
+          <i class="devicon-mysql-plain"></i>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-right">
+      <h2>Scrum Academy</h2>
+      <p>Projeto em grupo: Site informativo no modelo de curso sobre Metodologia Ágil, com cadastro, quizzes, provas e emissão de certificado.</p>
+      <p></p>
+      <p><strong>Tecnologias utilizadas:</strong> HTML, CSS, JavaScript, Python, Flask, MySQL, AWS</p>
+      <br>
+      <a href="https://github.com/Bug-Busters-F/scrum-academy" target="_blank" class="social githubProjeto">
+        <i class="fa fa-github"></i> Ver no GitHub
+      </a>
+    </div>
+  </div>  
 </main>
 
 <%- include('partials/footer') %>

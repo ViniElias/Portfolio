@@ -3,13 +3,80 @@ body {
     margin: 0;
     padding: 0;
     font-size: 18px;
+    background-color: gainsboro;
   }
   
-  header, footer {
-    background-color: #3e5fcc;
+  main {
+    padding: 2em;
+  }  
+
+  a {
+    padding: 6px 10px;
+    border-radius: 200px;
+  }
+
+  .social {
     color: white;
-    padding: 1px 0 20px 0;
-    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .social:hover {
+    transition: 0.2s;
+    color:#1a83b8;
+    background-color: white;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+    padding: 2em;
+  }
+  
+  .card {
+    display: flex;
+    background-color: #1a83b8;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .card-left {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .card-right {
+    flex: 2;
+    padding: 2em;
+    min-width: 300px;
+  }
+  
+  .card-right h2 {
+    margin-top: 0;
   }
 
   footer {
@@ -17,33 +84,27 @@ body {
     bottom: 0;
     width: 100%;
     padding: 5px;
+    display: flex;
+    justify-content: center;
   }
-  
-  nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  
-  main {
-    padding: 2em;
-  }  
 
-  p a {
-    color: white;
-    text-decoration: none;
+  .divIcons {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+  }
+
+  .tecnologias {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
     font-size: 20px;
-    margin: 2px;
   }
 
-  a {
-    padding: 10px;
-    border-radius: 15px;
-  }
-  
-  a:hover {
+  .githubProjeto {
+    margin: 0px;
+    padding: 5px;
     border: white solid 2px;
     background-color: white;
-    color:#222;
-    transition: 0.3s;
+    color:#1a83b8;
   }

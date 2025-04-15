@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 
 // Rotas
 app.get('/', (req, res) => {
-  res.render('index', { titulo: 'Portfólio', nome: 'Vinicius Elias' });
+  res.render('index', { titulo: 'Bem-Vindo ao meu Portfólio!', nome: 'Vinicius Elias' });
 });
 
 app.get('/projetos', (req, res) => {
