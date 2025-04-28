@@ -114,3 +114,14 @@ body {
     box-shadow: none;
     border-radius: 0;
   }
+
+  @keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .cursor {
+    animation: piscar 0.7s infinite;
+  }
+  
