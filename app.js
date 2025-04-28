@@ -13,14 +13,6 @@ app.get('/', (req, res) => {
   res.render('index', { titulo: 'Bem-Vindo ao meu Portfólio!', nome: 'Vinicius Elias' });
 });
 
-app.get('/projetos', (req, res) => {
-  const projetos = [
-    { nome: 'Projeto 1', descricao: 'Descrição do Projeto 1' },
-    { nome: 'Projeto 2', descricao: 'Descrição do Projeto 2' }
-  ];
-  res.render('projetos', { titulo: 'Projetos', projetos });
-});
-
 // Inicia o servidor
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
