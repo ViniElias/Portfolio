@@ -1,127 +1,218 @@
 body {
-    font-family: 'Trebuchet MS', sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    background-color: gainsboro;
-  }
-   
-  main {
-    padding: 2em;
-  }  
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  background-color: gainsboro;
+}
 
-  a {
-    padding: 6px 10px;
-    border-radius: 200px;
+main {
+  padding: 2em;
+}
+
+a {
+  padding: 6px 10px;
+  border-radius: 200px;
+}
+
+.social {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.social:hover {
+  transition: 0.2s;
+  color: #1a83b8;
+  background-color: white;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  padding: 2em;
+}
+
+.card {
+  display: flex;
+  background-color: #1a83b8;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.card-left {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-right {
+  flex: 2;
+  padding: 2em;
+  min-width: 300px;
+}
+
+.card-right h2 {
+  margin-top: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.divIcons {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+
+.tecnologias {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.githubProjeto {
+  margin: 0px;
+  padding: 5px;
+  border: white solid 2px;
+  background-color: white;
+  color: #1a83b8;
+  text-decoration: none;
+}
+
+.imgNoShadow {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+@keyframes piscar {
+  0% {
+    opacity: 1;
   }
 
-  .social {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 10px;
+  50% {
+    opacity: 0;
   }
 
-  .social:hover {
-    transition: 0.2s;
-    color:#1a83b8;
-    background-color: white;
+  100% {
+    opacity: 1;
   }
-  
-  .card-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2em;
-    align-items: center;
-    min-height: calc(100vh - 120px);
-    padding: 2em;
-  }
-  
-  .card {
-    display: flex;
-    background-color: #1a83b8;
-    color: white;
-    border-radius: 20px;
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.2);
-    overflow: hidden;
-    max-width: 900px;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  
-  .card-left {
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
-    padding: 1em;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .card-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .card-right {
-    flex: 2;
-    padding: 2em;
-    min-width: 300px;
-  }
-  
-  .card-right h2 {
-    margin-top: 0;
-  }
+}
 
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-  }
+.cursor {
+  animation: piscar 0.7s infinite;
+}
 
-  .divIcons {
-    display: flex;
-    justify-content: center;
-    width: 25%;
-  }
+.projetos-dinamicos {
+  width: 100%;
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
 
-  .tecnologias {
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-  }
+/* Título da seção */
+.projetos-dinamicos h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #1a83b8;
+}
 
-  .githubProjeto {
-    margin: 0px;
-    padding: 5px;
-    border: white solid 2px;
-    background-color: white;
-    color:#1a83b8;
-    text-decoration: none;
-  }
+/* Formulário de adição */
+.form-projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  margin-bottom: 2em;
+}
 
-  .imgNoShadow {
-    box-shadow: none;
-    border-radius: 0;
-  }
+.form-projeto input,
+.form-projeto textarea {
+  padding: 0.8em;
+  border: 2px solid #1a83b8;
+  border-radius: 8px;
+  font-size: 1em;
+  resize: vertical;
+}
 
-  @keyframes piscar {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  .cursor {
-    animation: piscar 0.7s infinite;
-  }
-  
+.form-projeto button {
+  align-self: flex-start;
+  background-color: #1a83b8;
+  color: white;
+  border: none;
+  padding: 0.8em 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-projeto button:hover {
+  background-color: #155a87;
+}
+
+/* Lista de projetos */
+.lista-projetos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-projetos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 1px solid #eee;
+}
+
+.lista-projetos li strong {
+  color: #1a83b8;
+}
+
+/* Botão de excluir dentro da lista */
+.form-excluir button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.4em 0.8em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-excluir button:hover {
+  background-color: #c0392b;
+}

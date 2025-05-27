@@ -7,7 +7,7 @@
     <%= titulo %>
   </title>
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -150,29 +150,72 @@
         </a>
       </div>
     </div>
-  </main>
-  
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const titulo = "Olá! Me chamo Vinicius Elias 👋";
-      const tituloElemento = document.getElementById('titulo-principal');
-      let index = 0;
 
+    <% projetos.forEach(proj=> { %>
+      <div class="card">
+        <div class="card-left">
+          <img src="<%= proj.imagem || '/images/project-placeholder.png' %>" alt="Imagem do <%= proj.nome %>"
+            class="card-image imgNoShadow">
+        </div>
+        <div class="card-right">
+          <h2>
+            <%= proj.nome %>
+          </h2>
+          <p>
+            <%= proj.descricao %>
+          </p>
+          <p><strong>Tecnologias:</strong>
+            <%= proj.tecnologias %>
+          </p>
+          <p>
+            <a href="<%= proj.repo_link %>" target="_blank" class="social githubProjeto">
+              <i class="fa fa-github"></i> Repositório
+            </a>
+          </p>
+          <form action="/projetos/<%= proj.id %>/delete" method="POST" class="form-excluir">
+            <button type="submit">Excluir</button>
+          </form>
+        </div>
+      </div>
+      <% }); %>
+        <section class="projetos-dinamicos">
+          <h2>Adicionar Novo Projeto</h2>
+          <form action="/projetos" method="POST" enctype="multipart/form-data" class="form-projeto">
+            <input type="text" name="nome" placeholder="Nome do projeto" required>
+            <textarea name="descricao" placeholder="Descrição" required></textarea>
+            <input type="text" name="tecnologias" placeholder="Tecnologias utilizadas (separadas por vírgula)" required>
+            <input type="url" name="repo_link" placeholder="Link do repositório no GitHub" required>
+            <input type="file" name="imagem" accept="image/*" required>
+            <button type="submit">Adicionar Projeto</button>
+          </form>
+        </section>
+  </main>
+
+  <!-- animação do título -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const titulo = "Olá! Me chamo Vinicius Elias 👋";
+      const el = document.getElementById('titulo-principal');
+      let i = 0;
       const cursor = document.createElement('span');
       cursor.innerText = '|';
       cursor.classList.add('cursor');
-      tituloElemento.appendChild(cursor);
-  
-      function escreverTitulo() {
-        if (index < titulo.length) {
-          tituloElemento.insertBefore(document.createTextNode(titulo.charAt(index)), cursor);
-          index++;
-          setTimeout(escreverTitulo, 100);
+      el.appendChild(cursor);
+      function digitar() {
+        if (i < titulo.length) {
+          el.insertBefore(
+            document.createTextNode(titulo.charAt(i)),
+            cursor
+          );
+          i++;
+          setTimeout(digitar, 100);
         }
       }
-  
-      escreverTitulo();
+      digitar();
     });
   </script>
+
+  <script src="/js/animarTitulo.js"></script>
 </body>
+
 </html>
