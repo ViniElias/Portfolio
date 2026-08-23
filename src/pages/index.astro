@@ -1,5 +1,5 @@
 ---
-
+import '../styles/global.css'
 ---
 
 <html lang="en">
@@ -9,9 +9,25 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header>
+			<div class="nav header">
+				<p>Vinicius Elias</p>
+				<nav aria-label="Navegação principal">
+					<a href="#sobre-mim">Sobre mim</a>
+					<a href="#projetos">Projetos</a>
+				</nav>
+			</div>
+		</header>
+		<footer>
+			<div class="nav footer">
+				Footer
+			</div>
+		</footer>
 	</body>
 </html>

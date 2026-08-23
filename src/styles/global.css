@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+* {
+    font-family: 'JetBrains Mono';
+}
+
+.nav {
+    border: 2px solid black;
+    background-color: #001A42;
+    color: #EEF0FF;
+    padding: 20px;
+    display: flex;
+    
+}
+
+.nav p {
+    font-size: 20px;
+    color: #D8E2FF;
+    font-weight: bold;
+}
