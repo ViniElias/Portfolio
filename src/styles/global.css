@@ -2,19 +2,163 @@
 
 * {
     font-family: 'JetBrains Mono';
+    font-weight: bold;
+    color: #D8E2FF;
 }
 
 .nav {
-    border: 2px solid black;
     background-color: #001A42;
-    color: #EEF0FF;
     padding: 20px;
-    display: flex;
-    
 }
 
 .nav p {
     font-size: 20px;
     color: #D8E2FF;
     font-weight: bold;
+    width: 10%;
+}
+
+#logo {
+    border-style: none;
+    transition: 0.4s;
+}
+
+#logo:hover {
+    color: #ADC6FF;
+}
+
+.main-nav a {
+    position: relative;
+    transition: 0.4s;
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ADC6FF;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+}
+
+.main-nav a:hover {
+    color: #ADC6FF;
+}
+
+.main-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.header {
+    display: flex;
+}
+
+.header nav {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    font-size: 16px;
+    min-width: 15% !important;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    min-width: 15% !important;
+}
+
+.contact-links a {
+    position: relative;
+    transition: 0.4s;
+}
+
+.contact-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ADC6FF;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+}
+
+.contact-links a:hover {
+    color: #ADC6FF;
+}
+
+.contact-links a:hover::after {
+    transform: scaleX(1);
+}
+
+.copyright {
+    font-size: 20px;
+    text-align: center;
+    width: auto;
+}
+
+.content {
+    height: 90vh;
+    background-color: #002E6A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.title {
+    color: #D8E2FF;
+    font-size: 50px;
+}
+
+.subtitle {
+    font-size: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.buttons a {
+    border: 2px solid #6F778E;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.buttons a:hover {
+    background-color: #2573E6;
+    border-color: #2573E6;
 }

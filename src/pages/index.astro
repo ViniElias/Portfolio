@@ -17,16 +17,33 @@ import '../styles/global.css'
 	<body>
 		<header>
 			<div class="nav header">
-				<p>Vinicius Elias</p>
-				<nav aria-label="Navegação principal">
-					<a href="#sobre-mim">Sobre mim</a>
+				<p><a href="#index" id="logo">Vinicius Elias</a></p>
+				<nav aria-label="Navegação principal" class="main-nav">
+					<a href="#index">Sobre mim</a>
 					<a href="#projetos">Projetos</a>
+					<a href="#contato">Contato</a>
 				</nav>
+				<p></p>
 			</div>
 		</header>
+		<div class="content">
+			<h1 class="title">Olá, eu sou Vinicius Elias</h1>
+			<p class="subtitle">Desenvolvedor Fullstack</p>
+			<div class="buttons">
+				<a href="#projetos">Ver Projetos</a>
+				<a href="#contato">Vamos Conversar</a>
+			</div>
+		</div>
 		<footer>
 			<div class="nav footer">
-				Footer
+				<div class="footer-content" id="contato">
+					<p>Vamos construir algo juntos?</p>
+					<p class="copyright">&copy; 2026 Vinicius Elias</p>
+					<nav aria-label="Links de contato" class="contact-links">
+						<a href="https://www.linkedin.com/in/viniciuseliasdev/" target="_blank" rel="noreferrer">LinkedIn</a>
+						<a href="https://github.com/ViniElias" target="_blank" rel="noreferrer">GitHub</a>
+					</nav>
+				</div>
 			</div>
 		</footer>
 	</body>
