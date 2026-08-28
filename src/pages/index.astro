@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css'
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -11,7 +11,10 @@ import '../styles/global.css'
 		<meta name="generator" content={Astro.generator} />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Astro</title>
 	</head>
 	<body>
@@ -34,14 +37,38 @@ import '../styles/global.css'
 				<a href="#contato">Vamos Conversar</a>
 			</div>
 		</div>
+		<section class="intro" aria-labelledby="intro-heading">
+			<div class="intro-container">
+				<div class="intro-text">
+					<h1 class="title">Quem sou eu</h1>
+					<p class="intro-p">
+						Meu nome é Vinicius Elias, estudante de programação, atualmente cursando o 
+						6º semestre de Análise e Desenvolvimento de Sistemas na Fatec de São José dos Campos.
+						Fiz Ensino Médio Técnico em Informática no Colégio Joseense, e me interesso principalmente
+						por desenvolvimento backend e análise e dados!
+					</p>
+				</div>
+				<div class="intro-photo">
+					<img src="/foto.jpeg" alt="Foto Vinicius">
+				</div>
+			</div>
+		</section>
 		<footer>
 			<div class="nav footer">
 				<div class="footer-content" id="contato">
 					<p>Vamos construir algo juntos?</p>
 					<p class="copyright">&copy; 2026 Vinicius Elias</p>
 					<nav aria-label="Links de contato" class="contact-links">
-						<a href="https://www.linkedin.com/in/viniciuseliasdev/" target="_blank" rel="noreferrer">LinkedIn</a>
-						<a href="https://github.com/ViniElias" target="_blank" rel="noreferrer">GitHub</a>
+						<a
+							href="https://www.linkedin.com/in/viniciuseliasdev/"
+							target="_blank"
+							rel="noreferrer">LinkedIn</a
+						>
+						<a
+							href="https://github.com/ViniElias"
+							target="_blank"
+							rel="noreferrer">GitHub</a
+						>
 					</nav>
 				</div>
 			</div>

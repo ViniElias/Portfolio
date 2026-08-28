@@ -7,7 +7,7 @@
 }
 
 .nav {
-    background-color: #001A42;
+    background-color: #131B2E;
     padding: 20px;
 }
 
@@ -128,7 +128,10 @@
 
 .content {
     height: 90vh;
-    background-color: #002E6A;
+    background:
+        radial-gradient(circle at 75% 15%, rgba(59, 91, 168, 0.4), transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(30, 42, 74, 0.3), transparent 50%),
+        #0a0e1a;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,4 +164,45 @@
 .buttons a:hover {
     background-color: #2573E6;
     border-color: #2573E6;
+    box-shadow: 0 0 15px #2573E6;
 }
+
+.intro {
+    padding: 4rem 1.5rem;
+    width: auto;
+    margin: 0 auto;
+    background:
+        linear-gradient(to bottom, #00122c, #031d46);
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .intro-text {
+    width: 45%;
+  }
+
+  .intro-p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .intro-photo img {
+    max-height: 400px;
+    box-shadow: 0 0 20px #2573E6;
+    border-radius: 10px;
+  }
+  
+  .intro-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    width: 75%;
+  }
