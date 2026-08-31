@@ -15,6 +15,7 @@ import "../styles/global.css";
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 		<title>Astro</title>
 	</head>
 	<body>
@@ -37,7 +38,7 @@ import "../styles/global.css";
 				<a href="#contato">Vamos Conversar</a>
 			</div>
 		</div>
-		<section class="intro" aria-labelledby="intro-heading">
+		<section id="contato" class="intro">
 			<div class="intro-container">
 				<div class="intro-text">
 					<h1 class="title">Quem sou eu</h1>
@@ -50,6 +51,67 @@ import "../styles/global.css";
 				</div>
 				<div class="intro-photo">
 					<img src="/foto.jpeg" alt="Foto Vinicius">
+				</div>
+			</div>
+		</section>
+		<section class="tech">
+			<div class="tech-container">
+				<h1 class="title">Tecnologias</h1>
+				<div class="stack">
+					<div class="stack-div">
+						<p>Linguagens de programação</p>
+						<div class="stack-icons">
+							<i class="devicon-python-plain colored" title="Python"></i>
+							<i class="devicon-java-plain colored" title="Java"></i>
+							<i class="devicon-javascript-plain colored" title="JavaScript"></i>
+							<i class="devicon-typescript-plain colored" title="TypeScript"></i>
+						</div>
+					</div>					
+					<div class="stack-div">
+						<p>Backend</p>
+						<div class="stack-icons">
+							<i class="devicon-nodejs-plain colored" title="Node.js"></i>
+							<i class="devicon-nestjs-plain colored" title="NestJS"></i>
+							<i class="devicon-fastapi-plain colored" title="FastAPI"></i>
+							<i class="devicon-flask-plain colored" title="Flask"></i>
+						</div>
+					</div>					
+					<div class="stack-div">
+						<p>Frontend</p>
+						<div class="stack-icons">
+							<i class="devicon-react-plain colored" title="React"></i>
+							<i class="devicon-astro-plain colored" title="Astro"></i>
+							<i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
+							<i class="devicon-tailwindcss-plain colored" title="TailwindCSS"></i>
+						</div>
+					</div>					
+					<div class="stack-div">
+						<p>Banco de dados</p>
+						<div class="stack-icons">
+							<i class="devicon-mysql-plain colored" title="MySQL"></i>
+							<i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
+							<i class="devicon-mongodb-plain colored" title="MongoDB"></i>
+						</div>
+					</div>					
+					<div class="stack-div">
+						<p>DevOps e ferramentas</p>
+						<div class="stack-icons">
+							<i class="devicon-git-plain colored" title="Git"></i>
+							<i class="devicon-github-plain colored" title="Github"></i>
+							<i class="devicon-docker-plain colored"  title="Docker"></i>
+							<i class="devicon-amazonwebservices-plain colored" title="AWS"></i>
+						</div>
+					</div>					
+					<div class="stack-div">
+						<p>Outros</p>
+						<div class="stack-text">
+							<p>Pacote Office</p>
+							<p>Power BI</p>
+							<p>Inglês avançado</p>
+							<p>Ollama</p>
+							<p>SCRUM</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

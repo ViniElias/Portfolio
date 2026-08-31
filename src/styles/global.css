@@ -4,6 +4,7 @@
     font-family: 'JetBrains Mono';
     font-weight: bold;
     color: #D8E2FF;
+    scroll-behavior: smooth;
 }
 
 .nav {
@@ -205,4 +206,79 @@
     justify-content: center;
     gap: 50px;
     width: 75%;
+  }
+
+.tech {
+    padding: 4rem 2rem;
+    width: auto;
+    margin: 0 auto;
+    background-color: #00122c;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tech-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .stack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .stack-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 20px;
+    background-color: #131B2E;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .stack-div p {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .stack-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .stack-icons i {
+    font-size: 35px;
+    transition: 0.2s;
+  }
+
+  .stack-icons i:hover {
+    transform: scale(1.2);
+  }
+
+  .stack-text {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .stack-text p {
+    font-size: 13px;
+    background-color: #002E6A;
+    border-radius: 15px;
+    padding: 5px 10px;
+    transition: 0.3s;
+  }
+
+  .stack-text p:hover {
+    background-color: #004395;
   }
